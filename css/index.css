@@ -68,12 +68,12 @@ a {
   margin-right: 15px;
 }
 
-.sliderJon {
+/*.sliderJon {
   position: absolute;
-  /*margin: auto;*/
+  margin: auto;
   bottom: 120px;
   left: 50%;
   -ms-transform: translate(-50%, 0%);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
-}
+}*/
