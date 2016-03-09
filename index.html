@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="CloudBit" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>CloudBit</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="bower_components/angular-slidezilla/src/angular-slidezilla.css">
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body ng-controller="CloudBitCtrl">
+		<div id="main">
+
+		</div>
+		<svg class="barSvg" ng-attr-width="{{width}}">
+			<rect class="rect" ng-attr-width="{{width}}" ng-attr-height="{{barHeight}}" />
+		</svg>
+		<div id="content">
+			<!-- <p class="bigText">22.5</p> -->
+			<p class="bigText">{{timerView | number:1}}</p>
+		</div>
+		<div id="buttons">
+			<a  ng-click="go()">
+				<img class="button" src="svg/play.svg"/>
+			</a>
+			<a ng-click="stop()">
+				<img class="button" src="svg/pause.svg"/>
+			</a>
+			<a ng-click="reset()">
+				<img class="button" src="svg/arrow-return-left.svg"/>
+			</a>
+		</div>
+
+		<div class="sliderJon">
+			<slider ng-model="slider2.val" min="20" max="60" step="5"></slider>
+		</div>
+
+		<!-- JAVASCRIPT -->
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="bower_components/angular-slidezilla/src/angular-slidezilla.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers/CloudBitCtrl.js"></script>
+		<script type="text/javascript" src="/js/live.js"></script>
+
+	</body>
+</html>
