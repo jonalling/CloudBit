@@ -54,7 +54,7 @@ $scope.$watch('timer', function(val) {
 	}
 });
 
-// $scope.slider2 = {val:30};
+$scope.slider2 = {val:30};
 
 $scope.go = function() {
 
